@@ -92,6 +92,10 @@ Plugin 'honza/vim-snippets'
     30  let s:columns = "\\begin{columns}\<cr>\\begin{column}{.5\\textwidth}\<cr><++>\<cr>\\end{column}\<cr>\\begin{column}{.5\\textwidth}\<cr><++>\<cr>\\end{column}\<cr>\\end{columns}"
     269 call s:Tex_SpecialMacros('ECO', '', 'columns', s:columns)
     ```
+        at `vim ~/.vim/bundle/Latex-Suite-aka-Vim-Latex/ftplugin/latex-suite/envmacros.vim `, modify `EFI` macro, add `[width=\textwidth]` after `\includegraphics`
+    
+        
+    
     
 
 ## emmet
