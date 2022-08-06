@@ -1,5 +1,30 @@
 # initialize a cloud server
 
+## create new user
+
+```
+useradd pdfexe -m # create user with a home folder
+passwd pdfexe
+usermod -a -G sudo pdfexe # add user to sudoers
+```
+
+## remove a user
+
+```
+userdel pdfexe
+```
+
+## allow `ssh` password login
+
+```
+sudo vim /etc/ssh/sshd_config
+```
+change ` PasswordAuthentication` to `yes`.
+
+## change default shell to `bash`
+
+Sometimes the default shell is `sh`. To solve this, change `/bin/sh` to `/bin/bash` in `/etc/passwd`
+
 ## Aliyun special
 
 ### dead apt source

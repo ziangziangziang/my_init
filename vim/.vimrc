@@ -63,3 +63,4 @@ set expandtab
 
 au FileType markdown set autoindent
 "au BufRead,BufNewFile *.md		set autoindent
+:set backspace=indent,eol,start
