@@ -14,3 +14,9 @@ git init --bare
 ```
 git clone git@remote_server:workspace/new_repo.git
 ```
+
+## check remote server
+
+```
+git remote show origin
+```

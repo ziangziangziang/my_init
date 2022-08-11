@@ -34,3 +34,9 @@ make install
 ```
 
 update `python` or `g++` from `apt` source if needed.
+
+## allow port `80` and `443`
+
+```
+setcap 'cap_net_bind_service=+ep' /usr/bin/node
+```
